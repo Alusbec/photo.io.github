@@ -1,0 +1,335 @@
+@font-face {
+    font-family: "forte";
+    src: url(../police/Forte.ttf);
+}
+
+@font-face {
+    font-family: "candara";
+    src: url(../police/Candara.ttf);
+}
+
+
+/* HEADER */
+
+body {
+    background-color: black;
+    font-family: "candara";
+}
+
+/* Barre des cookie, gestion de la colo */
+
+.alert {
+    background-color: #FFDE59;
+    color: #000000;
+}
+/* Gestion du btn de l'alerte cookies */
+.btn{
+    MARGIN-left: 150px;
+    border: solid #000000;
+    background-color: #353535;
+    color: blanchedalmond;
+ 
+}
+/* augmentation du height de 100px pour eviter de déformer l'image */
+
+.image {
+  background-image: url(../images/header.jpg);  
+  background-size: cover;
+  width: auto;
+  height: 700px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+/* mise en place logo sur photo du header */
+.logoHeader {
+    position: absolute;
+    top:300px;
+    left:1100px;
+    
+}
+
+.logoPhoto {
+    border: solid 2px #000000;
+}
+
+.telLogo {
+    text-align: center;
+    font-family: "forte";
+}
+
+
+/* barNav bootstrap */
+nav {
+    background-color: #353535;
+    height: 50px;
+    font-size: 25px;
+    margin-bottom: 25px;
+    font-family: "candara";
+    z-index: 1;
+    font-weight: bold;
+    
+}
+
+.navbar-nav>li {
+
+    margin-left: 100px;
+    font-family: "candara";
+}
+
+
+/* 3 BLOCS IMAGES */
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 33% 33% 34%;
+    grid-gap: 3px;
+    height: 200px;
+    width: 100%;
+
+}
+
+article {
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    width: auto;
+    height: 200px;
+ 
+}
+
+
+.locationImage {
+    
+        position: relative;
+        overflow: hidden;
+}
+
+/*PRESENTATION*/
+
+.titre {
+    font-size: 45px;
+    font-family: "forte";
+    color: white;
+    
+}
+
+.presentation {
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align : center;
+    color: white;
+    font-family: "candara"
+
+}
+
+.events {
+    background-image: url(../images/ballons2.jpg);
+    background-size: cover;
+    font-family: "candara"
+}
+
+.testimonials {
+    background-image: url(../images/temoignage2.jpg);
+    background-size: cover;
+    font-family: "candara"
+}
+
+.press {
+    background-image: url(../images/presse2.jpg);
+    background-size: cover;
+    font-family: "candara"
+}
+
+/* 3 BLOCS IMAGES */
+.container-fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 400px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+.events, .testimonials, .press{
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    font-family: "candara"
+}
+
+.TitlePictureBlocks{
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-family: "forte";
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+.events>ul{
+    color: #ffffff;
+    font-size: 18px;
+    font-family: "candara"
+}
+
+.events>ul>li{
+    list-style-type: none;
+    margin: 5px;
+    padding-right: 85px;
+    font-family: "candara"
+}
+
+.events>ul, .TextPictureBlocks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "candara"
+}
+
+.TextPictureBlocks{
+    margin: 20px;
+    text-align: center;
+    font-family: "candara"
+}
+
+.TextPictureBlocks>a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    font-weight: bold;
+    font-family: "candara"
+}
+
+ .texte {
+     margin-left: 170px;
+     margin-right: 170px;
+     font-family: "candara";
+     text-align: justify;
+     
+ }
+
+/* Défilement photos */
+.container{
+    margin-bottom: 60px;
+    margin-top: 20px;
+}
+
+#carouselExampleInterval img{
+    height: 300px;
+}
+.carousel-inner{
+    width: max-content;
+}
+.active{
+    position: relative;
+}
+
+@media (max-width: 768px){
+    #carouselExampleInterval img{
+        height: 180px;
+    }
+}
+
+@media (max-width: 414px){
+    #carouselExampleInterval img{
+        height: 100px;
+    }
+}
+
+@media (max-width: 375px){
+    #carouselExampleInterval img{
+        height: 90px;
+    }
+}
+
+
+/* footer mise en page */
+
+.yellowFont {
+    background-color: #FFDE59;
+    font-family: "candara"
+
+}
+
+footer {
+    border: #000000 1px solid;
+    background-color:#353535 ;
+    margin-top: 20px;
+    font-family: "candara"
+
+}
+
+.yellowText {
+    color:#FFDE59 ;
+    font-weight: bold;
+    font-family: "candara"
+}
+
+
+.rs img {
+    
+    width:  30px;
+    height: 30px;
+   
+} 
+
+i {
+    margin-right: 10px;
+}
+
+.Btt {
+    background-color: #FFDE59;
+    padding: 5px;
+    /* border-radius: 10px; */
+    width: 185px
+
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:700px)
+{
+    .logoHeader {
+        
+        top:470px;
+        left:30px;
+    }
+
+    .texte{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
+    .image {
+        background-image: url(../images/headerMobile.jpg);  
+        background-size: cover;
+        width: auto;
+        height: 700px;
+        margin-bottom: 25px;
+        position: relative;
+      }
+
+      .navbar-nav  {
+        background-color: #000000;
+    }
+}
+
+
+
+
+
+
+
